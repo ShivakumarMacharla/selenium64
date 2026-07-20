@@ -3,12 +3,12 @@
   <groupId>Selenium64</groupId>
   <artifactId>Selenium64</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <!--
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
  
-  
+  -->
   <!-- 
 	1. Run test cases using pom.xml with in eclipse
 	add (maven-compiler-plugin, maven-surefire-plugin) 

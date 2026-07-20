@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test1(failed)">
+    <parameter name="BROWSER" value="chrome"/>
     <classes>
       <class name="basics.DropDown">
         <methods>
           <include name="tearDown"/>
-          <include name="autoSuggestionDropdown"/>
+          <include name="selectDropDown"/>
+          <include name="browserSetup"/>
         </methods>
       </class> <!-- basics.DropDown -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="methods" name="Test2(failed)">
+    <parameter name="BROWSER" value="Edge"/>
+    <classes>
+      <class name="basics.DropDown">
+        <methods>
+          <include name="tearDown"/>
+          <include name="selectDropDown"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- basics.DropDown -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

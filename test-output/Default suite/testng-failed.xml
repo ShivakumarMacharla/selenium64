@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="basics.IncognitoMode">
+      <class name="basics.Screenshots">
         <methods>
-          <include name="testInIncognitoMode"/>
+          <include name="getSpecificWebELmentScreenShot"/>
         </methods>
-      </class> <!-- basics.IncognitoMode -->
+      </class> <!-- basics.Screenshots -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

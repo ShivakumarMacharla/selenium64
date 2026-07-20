@@ -2,20 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-19T20:07:53 IST" name="Suite" finished-at="2026-07-19T20:08:09 IST" duration-ms="15982">
+  <suite started-at="2026-07-20T12:56:30 IST" name="Suite" finished-at="2026-07-20T12:56:52 IST" duration-ms="21977">
     <groups>
     </groups>
-    <test started-at="2026-07-19T20:07:53 IST" name="Test" finished-at="2026-07-19T20:08:09 IST" duration-ms="15982">
+    <test started-at="2026-07-20T12:56:30 IST" name="Test1" finished-at="2026-07-20T12:56:52 IST" duration-ms="21977">
       <class name="basics.DropDown">
-        <test-method signature="selectDropDown()[pri:0, instance:basics.DropDown@15ff3e9e]" started-at="2026-07-19T20:07:53 IST" name="selectDropDown" finished-at="2026-07-19T20:08:09 IST" duration-ms="15672" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:basics.DropDown@16d04d3d]" started-at="2026-07-20T12:56:30 IST" name="browserSetup" finished-at="2026-07-20T12:56:34 IST" duration-ms="3635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="selectDropDown()[pri:0, instance:basics.DropDown@16d04d3d]" started-at="2026-07-20T12:56:34 IST" name="selectDropDown" finished-at="2026-07-20T12:56:52 IST" duration-ms="18108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDropDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:basics.DropDown@15ff3e9e]" started-at="2026-07-19T20:08:09 IST" name="tearDown" finished-at="2026-07-19T20:08:09 IST" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:basics.DropDown@16d04d3d]" started-at="2026-07-20T12:56:52 IST" name="tearDown" finished-at="2026-07-20T12:56:52 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- basics.DropDown -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

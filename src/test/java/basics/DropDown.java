@@ -6,16 +6,45 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class DropDown {
 	WebDriver driver;
+	
+	@BeforeClass
+	@Parameters({"BROWSER"})
+	public void browserSetup(String browser) {
+		try {
+			if(browser.equalsIgnoreCase("Chrome")) {
+				driver = new ChromeDriver();
+				
+			}else if(browser.equalsIgnoreCase("Edge")) {
+				driver = new EdgeDriver();
+				
+			}
+			driver.get("https://www.google.com/");
+		}catch (Exception e) {
+	        System.out.println("Illegal browser handling");
+	        e.printStackTrace();
+	    }
+	}
+	
+	@AfterClass
+	public void tearDown() {
+		driver.close();
+	}
+	
+	
 	@Test
 	public void selectDropDown() throws InterruptedException {
-		driver = new ChromeDriver();
-		driver.get("https://practice.expandtesting.com/dropdown#google_vignette");
+		//driver = new ChromeDriver();
+		Thread.sleep(3000);
+		driver.navigate().to("https://practice.expandtesting.com/dropdown#google_vignette");
 		
 		driver.manage().window().maximize();
 		
@@ -68,10 +97,8 @@ public class DropDown {
 	
 	}
 	
-	@AfterClass
-	public void tearDown() {
-		driver.close();
-	}
+	
+
 
 
 }
