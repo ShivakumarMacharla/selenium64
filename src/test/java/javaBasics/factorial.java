@@ -2,8 +2,12 @@ package javaBasics;
 
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class factorial {
 	
+	public static final Logger log = LogManager.getLogger(factorial.class);
 	public static void main(String[] args) {
 		System.out.println("Enter number ");
 		Scanner sc = new Scanner(System.in);
@@ -50,7 +54,7 @@ public class factorial {
 		}
 		while(num>0);
 		
-		 
+		 log.info("factorial");
 	}
 
 }

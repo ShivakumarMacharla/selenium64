@@ -1,9 +1,13 @@
 package javaBasics;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class AToZ {
 
+	public static final Logger log = LogManager.getLogger(AToZ.class);
 	public static void main(String[] args) {
 		
 //		for(char i='a';i<='z';i++) {
@@ -29,7 +33,8 @@ public class AToZ {
 //			}
 //		}
 //		System.out.println(sum);
-		
+	
+		log.info("AToZ");
 	}
 
 }

@@ -3,8 +3,14 @@ package javaBasics;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CountCharacterCount {
+import org.apache.commons.logging.Log;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+public class CountCharacterCount   {
+
+	public static final Logger log = LogManager.getLogger(CountCharacterCount.class);
+	
 	public static void main(String[] args) {
 		
 //		String str = "Java is Object Oriented language";
@@ -36,5 +42,6 @@ public class CountCharacterCount {
 			System.out.println(ch +" "+map.get(ch));
 			}
 		
+		log.info("CountCharacterCount");
 	}
 }

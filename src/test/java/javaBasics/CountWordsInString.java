@@ -3,8 +3,13 @@ package javaBasics;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class CountWordsInString {
 
+	public static final Logger log = LogManager.getLogger(CountWordsInString.class);
+	
 	public static void main(String[] args) {
 	
 		String str = "I am learning learning java java programming";
@@ -27,7 +32,7 @@ public class CountWordsInString {
 		for(String x :map.keySet()) {
 			System.out.println("The count of word :"+x+" = "+map.get(x));
 		}
-
+		log.info("");
 	}
 
 }
