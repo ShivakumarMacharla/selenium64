@@ -2,5 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  <classes>
+  <class name="javaBasics.AToZ"/>
+   <class name="javaBasics.CountCharacterCount"/>
+    <class name="javaBasics.CountWordsInString"/>
+     <class name="javaBasics.factorial"/>
+      <class name="javaBasics.Fcatorial_1"/>
+       <class name="javaBasics.LogBase"/>
+        <class name="javaBasics.MoveNegativeElementsToFront"/>
+         <class name="javaBasics.reverse_num"/>
+          <class name="javaBasics.sumOfDigits"/>
+           <class name="javaBasics.tables"/>
+  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
